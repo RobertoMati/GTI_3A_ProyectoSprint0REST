@@ -4,7 +4,7 @@
 include 'bbdd.php';
 
 //Obtener la información de la tabla de la base de datos
-$consulta = "SELECT * FROM datos";
+$consulta = "SELECT * FROM medidas";
 //Ejecutamos la consulta
 $resultado = mysqli_query($conexion, $consulta);
 
@@ -13,7 +13,10 @@ $resultado = mysqli_query($conexion, $consulta);
 while($fila = mysqli_fetch_array($resultado)){
     //Almacenamos los datos en el array
     $datos[] = array(
-        'dato' => $fila['dato'],
+        'uuid' => $fila['uuid'],
+        'minor' => $fila['minor'],
+        'fecha' => $fila['fecha']
     );
+    
 }
 ?>
