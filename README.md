@@ -3,10 +3,10 @@ En este repositorio, se guardan los archivos correspondientes al apartado REST d
 
 Este repositorio hace funcionar correctamente a la aplicación móvil del repositorio ProyectoSprint0App y de ProyectoSprint0Web.
 
-#¿Necesito algún programa?
+# ¿Necesito algún programa?
 Para poder modificar los archivos descargados de este repositorio, lo más conveniente es que tengas instalado en tu dispositivo un editor de código fuente para poder visualizar correctamente los archivos. Como se verá en el siguiente apartado, también necesitaremos un sistema de gestión de base de datos.
 
-#¿Cómo utilizo los archivos?
+# ¿Cómo utilizo los archivos?
 Como se ha comentado anteriormente, estos archivos sirven para conectar correctamente las aplicaciones con la base de datos y realizar acciones. Para ello, se deberán seguir los siguientes pasos:
 
 *En primer jugar, necesitamos un sistema de gestión de base de datos, en mi caso he utilizado xampp. Una vez configurado, deberemos incluir la carpeta sprint0REST dentro de la carpeta htdocs del directorio de xampp.
