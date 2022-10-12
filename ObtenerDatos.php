@@ -17,6 +17,5 @@ while($fila = mysqli_fetch_array($resultado)){
         'minor' => $fila['minor'],
         'fecha' => $fila['fecha']
     );
-    
 }
 ?>
