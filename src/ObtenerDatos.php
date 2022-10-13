@@ -19,7 +19,7 @@ $resultado = mysqli_query($conexion, $consulta);
 /**
  * @brief Creamos una tabla para mostrar los datos
  */
-$s = '<table border="3">
+$tabla = '<table border="3">
     <thead>
         <tr>
             <th>UUID</th>
@@ -33,7 +33,7 @@ $s = '<table border="3">
  * @brief Creamos un bucle para mostrar los datos
  */
 while ($fila = mysqli_fetch_array($resultado)) {
-    $s .= '<tr>
+    $tabla .= '<tr>
             <td>' . $fila['uuid'] . '</td>
             <td>' . $fila['minor'] . '</td>
             <td>' . $fila['fecha'] . '</td>
@@ -43,12 +43,12 @@ while ($fila = mysqli_fetch_array($resultado)) {
 /**
  * @brief Cerramos la conexión
  */
-$s .= '</tbody>
+$tabla .= '</tbody>
 </table>';
 
 /**
  * @brief Mostramos la tabla
  */
-echo $s;
+echo $tabla;
 
 ?>
