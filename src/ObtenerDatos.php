@@ -1,4 +1,5 @@
 <?php
+
 //Incluimos el archivo de conexión a la base de datos
 include '../src/bbdd.php';
 
@@ -7,14 +8,29 @@ $consulta = "SELECT * FROM medidas";
 //Ejecutamos la consulta
 $resultado = mysqli_query($conexion, $consulta);
 
-//Creamos un array para almacenar los datos
-//Mientras haya datos en la tabla, los almacenamos en el array
-while($fila = mysqli_fetch_array($resultado)){
-    //Almacenamos los datos en el array
-    $datos[] = array(
-        'uuid' => $fila['uuid'],
-        'minor' => $fila['minor'],
-        'fecha' => $fila['fecha']
-    );
+$s = '<table border="3">
+    <thead>
+        <tr>
+            <th>UUID</th>
+            <th>minor</th>
+            <th>Fecha</th>
+        </tr>
+    </thead>
+    <tbody>';
+
+//Recorremos el resultado de la consulta
+while ($fila = mysqli_fetch_array($resultado)) {
+    $s .= '<tr>
+            <td>' . $fila['uuid'] . '</td>
+            <td>' . $fila['minor'] . '</td>
+            <td>' . $fila['fecha'] . '</td>
+        </tr>';
 }
+
+$s .= '</tbody>
+
+</table>';
+
+echo $s;
+
 ?>
