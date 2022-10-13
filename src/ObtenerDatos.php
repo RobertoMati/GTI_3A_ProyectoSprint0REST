@@ -1,7 +1,6 @@
 <?php
-
 //Incluimos el archivo de conexión a la base de datos
-include 'bbdd.php';
+include '../src/bbdd.php';
 
 //Obtener la información de la tabla de la base de datos
 $consulta = "SELECT * FROM medidas";

@@ -1,6 +1,6 @@
 <?php
 //Incluimos el archivo de conexión a la base de datos
-include 'bbdd.php';
+include '../src/bbdd.php';
 
 //Creamos las variables que almacenarán los datos del formulario
 $uuid = $_POST['uuid'];
