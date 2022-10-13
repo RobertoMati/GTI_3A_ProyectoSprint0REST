@@ -1,0 +1,60 @@
+\hypertarget{_obtener_datos_8php}{}\doxysection{C\+:/xampp/htdocs/sprint0\+REST/src/\+Obtener\+Datos.php File Reference}
+\label{_obtener_datos_8php}\index{C:/xampp/htdocs/sprint0REST/src/ObtenerDatos.php@{C:/xampp/htdocs/sprint0REST/src/ObtenerDatos.php}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_obtener_datos_8php_a8b1625884d3b429a31ff07be097b7083}{\$consulta}} = \char`\"{}SELECT $\ast$ FROM medidas\char`\"{}
+\begin{DoxyCompactList}\small\item\em En este archivo se obtienen los datos de la base de datos. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_obtener_datos_8php_a06face0ef35c41554d8f4fe115363f58}{\$resultado}} = mysqli\+\_\+query(\$conexion, \$consulta)
+\begin{DoxyCompactList}\small\item\em Ejecutamos la consulta. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_obtener_datos_8php_a56b2a25cb10249a4e8f80b939d48786f}{\$s}}
+\begin{DoxyCompactList}\small\item\em Creamos una tabla para mostrar los datos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_obtener_datos_8php_a8b1625884d3b429a31ff07be097b7083}\label{_obtener_datos_8php_a8b1625884d3b429a31ff07be097b7083}} 
+\index{ObtenerDatos.php@{ObtenerDatos.php}!\$consulta@{\$consulta}}
+\index{\$consulta@{\$consulta}!ObtenerDatos.php@{ObtenerDatos.php}}
+\doxysubsubsection{\texorpdfstring{\$consulta}{$consulta}}
+{\footnotesize\ttfamily \$consulta = \char`\"{}SELECT $\ast$ FROM medidas\char`\"{}}
+
+
+
+En este archivo se obtienen los datos de la base de datos. 
+
+Creamos la consulta para obtener los datos de la base de datos \mbox{\Hypertarget{_obtener_datos_8php_a06face0ef35c41554d8f4fe115363f58}\label{_obtener_datos_8php_a06face0ef35c41554d8f4fe115363f58}} 
+\index{ObtenerDatos.php@{ObtenerDatos.php}!\$resultado@{\$resultado}}
+\index{\$resultado@{\$resultado}!ObtenerDatos.php@{ObtenerDatos.php}}
+\doxysubsubsection{\texorpdfstring{\$resultado}{$resultado}}
+{\footnotesize\ttfamily \$resultado = mysqli\+\_\+query(\$conexion, \$consulta)}
+
+
+
+Ejecutamos la consulta. 
+
+\mbox{\Hypertarget{_obtener_datos_8php_a56b2a25cb10249a4e8f80b939d48786f}\label{_obtener_datos_8php_a56b2a25cb10249a4e8f80b939d48786f}} 
+\index{ObtenerDatos.php@{ObtenerDatos.php}!\$s@{\$s}}
+\index{\$s@{\$s}!ObtenerDatos.php@{ObtenerDatos.php}}
+\doxysubsubsection{\texorpdfstring{\$s}{$s}}
+{\footnotesize\ttfamily while ( \$fila=mysqli\+\_\+fetch\+\_\+array( \$resultado)) \$s}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{stringliteral}{'<table border="{}3"{}>}}
+\DoxyCodeLine{\textcolor{stringliteral}{    <thead>}}
+\DoxyCodeLine{\textcolor{stringliteral}{        <tr>}}
+\DoxyCodeLine{\textcolor{stringliteral}{            <th>UUID</th>}}
+\DoxyCodeLine{\textcolor{stringliteral}{            <th>minor</th>}}
+\DoxyCodeLine{\textcolor{stringliteral}{            <th>Fecha</th>}}
+\DoxyCodeLine{\textcolor{stringliteral}{        </tr>}}
+\DoxyCodeLine{\textcolor{stringliteral}{    </thead>}}
+\DoxyCodeLine{\textcolor{stringliteral}{    <tbody>'}}
+
+\end{DoxyCode}
+
+
+Creamos una tabla para mostrar los datos. 
+
+Creamos un bucle para mostrar los datos.
+
+Cerramos la conexión 

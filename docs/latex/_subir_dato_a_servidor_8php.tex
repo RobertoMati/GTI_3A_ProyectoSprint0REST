@@ -1,0 +1,57 @@
+\hypertarget{_subir_dato_a_servidor_8php}{}\doxysection{C\+:/xampp/htdocs/sprint0\+REST/src/\+Subir\+Dato\+AServidor.php File Reference}
+\label{_subir_dato_a_servidor_8php}\index{C:/xampp/htdocs/sprint0REST/src/SubirDatoAServidor.php@{C:/xampp/htdocs/sprint0REST/src/SubirDatoAServidor.php}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_subir_dato_a_servidor_8php_aeccc2a337445686487ea085278c79eff}{\$uuid}} = \$\+\_\+\+POST\mbox{[}\textquotesingle{}uuid\textquotesingle{}\mbox{]}
+\begin{DoxyCompactList}\small\item\em En este archivo se sube la información de la base de datos a un servidor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_subir_dato_a_servidor_8php_ada7edccfef7601184431347519c2ff53}{\$minor}} = \$\+\_\+\+POST\mbox{[}\textquotesingle{}minor\textquotesingle{}\mbox{]}
+\item 
+\mbox{\hyperlink{_subir_dato_a_servidor_8php_a9cdc3f8485a8f697cc1a94e01e815794}{\$fecha}} = \$\+\_\+\+POST\mbox{[}\textquotesingle{}fecha\textquotesingle{}\mbox{]}
+\item 
+\mbox{\hyperlink{_subir_dato_a_servidor_8php_aba0c4eb23a8f82b1f15c488011546e6e}{\$consulta\+\_\+sql}} = \char`\"{}INSERT INTO medidas VALUES (\textquotesingle{}\$uuid\textquotesingle{}, \textquotesingle{}\$minor\textquotesingle{}, \textquotesingle{}\$fecha\textquotesingle{})\char`\"{}
+\begin{DoxyCompactList}\small\item\em Creamos la consulta para insertar los datos en la base de datos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_subir_dato_a_servidor_8php_aba0c4eb23a8f82b1f15c488011546e6e}\label{_subir_dato_a_servidor_8php_aba0c4eb23a8f82b1f15c488011546e6e}} 
+\index{SubirDatoAServidor.php@{SubirDatoAServidor.php}!\$consulta\_sql@{\$consulta\_sql}}
+\index{\$consulta\_sql@{\$consulta\_sql}!SubirDatoAServidor.php@{SubirDatoAServidor.php}}
+\doxysubsubsection{\texorpdfstring{\$consulta\_sql}{$consulta\_sql}}
+{\footnotesize\ttfamily \$consulta\+\_\+sql = \char`\"{}INSERT INTO medidas VALUES (\textquotesingle{}\$uuid\textquotesingle{}, \textquotesingle{}\$minor\textquotesingle{}, \textquotesingle{}\$fecha\textquotesingle{})\char`\"{}}
+
+
+
+Creamos la consulta para insertar los datos en la base de datos. 
+
+\mbox{\Hypertarget{_subir_dato_a_servidor_8php_a9cdc3f8485a8f697cc1a94e01e815794}\label{_subir_dato_a_servidor_8php_a9cdc3f8485a8f697cc1a94e01e815794}} 
+\index{SubirDatoAServidor.php@{SubirDatoAServidor.php}!\$fecha@{\$fecha}}
+\index{\$fecha@{\$fecha}!SubirDatoAServidor.php@{SubirDatoAServidor.php}}
+\doxysubsubsection{\texorpdfstring{\$fecha}{$fecha}}
+{\footnotesize\ttfamily \$fecha = \$\+\_\+\+POST\mbox{[}\textquotesingle{}fecha\textquotesingle{}\mbox{]}}
+
+\mbox{\Hypertarget{_subir_dato_a_servidor_8php_ada7edccfef7601184431347519c2ff53}\label{_subir_dato_a_servidor_8php_ada7edccfef7601184431347519c2ff53}} 
+\index{SubirDatoAServidor.php@{SubirDatoAServidor.php}!\$minor@{\$minor}}
+\index{\$minor@{\$minor}!SubirDatoAServidor.php@{SubirDatoAServidor.php}}
+\doxysubsubsection{\texorpdfstring{\$minor}{$minor}}
+{\footnotesize\ttfamily \$minor = \$\+\_\+\+POST\mbox{[}\textquotesingle{}minor\textquotesingle{}\mbox{]}}
+
+\mbox{\Hypertarget{_subir_dato_a_servidor_8php_aeccc2a337445686487ea085278c79eff}\label{_subir_dato_a_servidor_8php_aeccc2a337445686487ea085278c79eff}} 
+\index{SubirDatoAServidor.php@{SubirDatoAServidor.php}!\$uuid@{\$uuid}}
+\index{\$uuid@{\$uuid}!SubirDatoAServidor.php@{SubirDatoAServidor.php}}
+\doxysubsubsection{\texorpdfstring{\$uuid}{$uuid}}
+{\footnotesize\ttfamily \$uuid = \$\+\_\+\+POST\mbox{[}\textquotesingle{}uuid\textquotesingle{}\mbox{]}}
+
+
+
+En este archivo se sube la información de la base de datos a un servidor. 
+
+Creamos las variables que almacenarán los datos del formulario 
+\begin{DoxyParams}{Parameters}
+{\em \$uuid} & \\
+\hline
+{\em \$minor} & \\
+\hline
+{\em \$fecha} & \\
+\hline
+\end{DoxyParams}

@@ -1,13 +1,24 @@
 <?php
+/**
+ * @brief En este archivo se obtienen los datos de la base de datos
+ */
 
 //Incluimos el archivo de conexión a la base de datos
 include '../src/bbdd.php';
 
-//Obtener la información de la tabla de la base de datos
+/**
+ * @brief Creamos la consulta para obtener los datos de la base de datos
+ */
 $consulta = "SELECT * FROM medidas";
-//Ejecutamos la consulta
+
+/**
+ * @brief Ejecutamos la consulta
+ */
 $resultado = mysqli_query($conexion, $consulta);
 
+/**
+ * @brief Creamos una tabla para mostrar los datos
+ */
 $s = '<table border="3">
     <thead>
         <tr>
@@ -18,7 +29,9 @@ $s = '<table border="3">
     </thead>
     <tbody>';
 
-//Recorremos el resultado de la consulta
+/**
+ * @brief Creamos un bucle para mostrar los datos
+ */
 while ($fila = mysqli_fetch_array($resultado)) {
     $s .= '<tr>
             <td>' . $fila['uuid'] . '</td>
@@ -27,10 +40,15 @@ while ($fila = mysqli_fetch_array($resultado)) {
         </tr>';
 }
 
+/**
+ * @brief Cerramos la conexión
+ */
 $s .= '</tbody>
-
 </table>';
 
+/**
+ * @brief Mostramos la tabla
+ */
 echo $s;
 
 ?>
