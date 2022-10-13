@@ -16,3 +16,7 @@ Como se ha comentado anteriormente, estos archivos sirven para conectar correcta
 * En mi caso, la base de datos tiene como nombre "sprint0", y la tabla, "medidas". Dicha tabla consta de dos columnas, una para el UUID del dispositivo y otra para el valor que nos envía.
 
 * Por último, en caso de que no se hayan elegido los mismos nombres que los mencionados anteriormente, se deberán cambiar en los archivos para que la conexión se haga correctamente.
+
+# Tests
+Para comprobar el correcto funcionamiento de los archivos, se han realizado distintos tests:
+* El archivo pruebaConexion.php sirve para comprobar si la conexión con el servidor se ha realizado correctamente. Para utilizarlo, debes iniciar el servidor, y, seguidamente, en el navegador, escribir http://localhost/Sprint0REST/test/ y te mostrará información sobre la conexión con el servidor.
