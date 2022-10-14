@@ -19,4 +19,4 @@ Como se ha comentado anteriormente, estos archivos sirven para conectar correcta
 
 # Tests
 Para comprobar el correcto funcionamiento de los archivos, se han realizado distintos tests:
-* El archivo pruebaConexion.php sirve para comprobar si la conexión con el servidor se ha realizado correctamente. Para utilizarlo, debes iniciar el servidor, y, seguidamente, en el navegador, escribir http://localhost/Sprint0REST/test/ y te mostrará información sobre la conexión con el servidor.
+* El archivo pruebaConexion.php sirve para comprobar si la conexión con el servidor se ha realizado correctamente. Para utilizarlo, debes iniciar el servidor, y, seguidamente, en el navegador, escribir [http://localhost/Sprint0REST/test/](http://localhost/Sprint0REST/test/pruebaConexion.php) y te mostrará información sobre la conexión con el servidor.
